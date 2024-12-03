@@ -3,18 +3,24 @@
     padding: 0;
 }
 
-#contenedor {
+.contenedor {
     width: 100vw;
     height: 100vh;
     margin: 0.5em auto;
     padding: 0.5em;
 }
 
-#footer{
+.header {
+    display: grid;
+    grid-gap: 2em;
+    padding: 1em;
+}
+
+.footer{
     height: 8%;
+    display: flex;
+    justify-content: flex-end;
     margin: 1em;
-    background-color:rgba(245, 239, 238, 0.512);
-    border-radius: 1em;
 }
 
 body {
@@ -24,18 +30,28 @@ body {
     overflow: hidden;
 }
 
-#contenido {
+.contenido {
     height: 64%;
     margin: 1em;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
-#buttonWrapper {
+.buttonWrapper  {
     width: 10em;
     height: 10em;
 }
+
+.buttonGalery {
+    width: 4em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}  
 
 .video-background {
     position: fixed;
@@ -43,8 +59,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que el video ocupe toda la pantalla */
-    z-index: -1; /* Coloca el video detrás del contenido */
+    object-fit: cover;
+    z-index: -1;
 }
 
 .content {
