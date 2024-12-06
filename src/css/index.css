@@ -71,3 +71,11 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
