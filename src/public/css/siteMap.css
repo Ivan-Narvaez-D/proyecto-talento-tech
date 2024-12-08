@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.buttonHome {
+    width: 4em;
+}
+
+.homeDropdown {
+    padding-inline-start: 1em;
+}
+
+.homeDropdown > button {
+    display: block;
+}
+
+.homeDropdown > .on {
+    padding-inline-start: 1em;
+}
+
+img {
+    width: 4em;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
