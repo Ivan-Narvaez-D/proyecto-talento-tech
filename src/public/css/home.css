@@ -16,6 +16,17 @@
     display: grid;
     grid-gap: 2em;
     padding: 1em;
+    background: linear-gradient(45deg, #686666, #abebf3); /* Fondo degradado */
+    color: rgb(40, 39, 39); /* Texto en blanco */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente moderna */
+    border-radius: 2in; /* Bordes redondeados */
+    box-shadow: 10px 10px 0 0; /* Sombra para dar profundidad */
+    text-align: center; /* Centra el contenido del texto */
+}
+
+.header p {
+    font-size: 1.5em; /* Tamaño de fuente para subtítulos o descripciones */
+    margin: 0.5em 0 0 0; /* Espaciado superior para separar del título */
 }
 
 .footer{
@@ -70,12 +81,16 @@ img {
     transform: translateY(-50%);
 }
 
-.off {
-    display: none;
+.buttonGraphicContainer {
+    display: flex;
+    justify-content: center;
+    padding: 9em;
 }
 
-.on {
-    display: block;
+.buttonGraphics {
+    width: 100%;
+    border: 4mm ridge rgb(175 224 227 / 60%);
+    font-size: 2em;
 }
 
 .footer button {
