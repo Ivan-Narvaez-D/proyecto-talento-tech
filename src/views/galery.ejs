@@ -18,16 +18,9 @@
             </div>
         </div>
         <div class="galeryContainer">
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
-            <button class="showBirdButton"></button>
+            <% data.forEach(birdData => { %>
+                <%- include('partials/buttonGalery', { birdData, birdName: birdData.Especie.replace(" ", "-") }); %>
+            <% }); %>
         </div>
     </div>
     <link rel="stylesheet" href="/css/galery.css">

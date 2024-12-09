@@ -13,6 +13,16 @@
     z-index: -1;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+}
+
+.title {
+    justify-self: center;
+}
+
 .galeryContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -27,4 +37,10 @@
 
 .buttonHome {
     width: 4em;
+    border: none;
+    background-color: transparent;
+}
+
+.buttonHome img {
+    width: 100%;
 }

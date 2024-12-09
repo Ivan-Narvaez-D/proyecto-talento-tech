@@ -1,17 +1,10 @@
 import express from 'express'
-import xlsx from 'xlsx'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import router from './routes/index.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-
-// const workbook = xlsx.readFile(__dirname, 'public', 'Especies.xlsx')
-// const sheetName = workbook.SheetNames[0]
-// const sheet = workbook.Sheets[sheetName]
-// const data = xlsx.utils.sheet_to_json(sheet)
-// console.log(data)
 
 const app = express();
 app.set('view engine', 'ejs')

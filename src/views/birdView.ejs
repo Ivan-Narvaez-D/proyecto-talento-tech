@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Tech</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <button class="buttonHome" id="buttonHome">
+                <img src="/img/homeIcon.png" alt="galeryIcon">
+            </button>
+            <div class="title">
+                <p><%= birdData.Especie %></p>
+            </div>
+        </div>
+        <div class="imgContainer">
+            <img src="" alt="">
+        </div>
+        <div class="commonNamesContainer">
+            <p>Nombres comunes (es)</p>
+            <ul>
+                <% birdData.nombreAlter.split(',').forEach(altName => { %>
+                    <li><%= altName.trim() %></li>
+                <% }); %>
+            </ul>
+        </div>
+        <div class="taxonomiContainer">
+            <p>Taxonomía</p>
+            <ul>
+                <li>Reino: <%= birdData.Reino %></li>
+                <li>Filo: <%= birdData.Filo %></li>
+                <li>Clase: <%= birdData.Clase %></li>
+                <li>Orden: <%= birdData.Orden %></li>
+                <li>Familia: <%= birdData.Familia %></li>
+                <li>Género: <%= birdData.Género %></li>
+            </ul>
+        </div>
+        <div class="descriptionContainer">
+            <p>Resumen</p>
+            <p><%= birdData.Descripción %></p>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/css/birdView.css">
+    <script src="/js/birdView.js"></script>
+</body>
+</html>

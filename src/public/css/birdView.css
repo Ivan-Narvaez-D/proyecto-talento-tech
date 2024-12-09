@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-rows: auto max-content max-content;
+    grid-template-columns: 70% 30%;
+    padding: 1em;
+    grid-gap: 1em;
+}
+
+.header {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: span 2;
+    grid-template-columns: max-content auto;
+    align-items: center;
+}
+
+.title {
+    justify-self: center;
+}
+
+.buttonHome {
+    width: 4em;
+    border: none;
+    background-color: transparent;
+    display: inline;
+}
+
+.buttonHome img {
+    width: 100%;
+}
+
+.taxonomiContainer {
+    grid-column-start: 2;
+}
+
+ul {
+    padding: 1em;
+}
+
+.descriptionContainer {
+    grid-row-start: 3;
+}

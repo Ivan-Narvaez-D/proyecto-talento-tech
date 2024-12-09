@@ -4,6 +4,8 @@
 }
 
 .contenedor {
+    display: grid;
+    grid-template-rows: max-content max-content auto max-content;
     width: 100vw;
     height: 100vh;
     margin: 0.5em auto;
@@ -17,10 +19,10 @@
 }
 
 .footer{
-    height: 8%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 1em;
+    grid-row-start: 4;
 }
 
 body {
@@ -31,7 +33,7 @@ body {
 }
 
 .contenido {
-    height: 64%;
+    height: max-content;
     margin: 1em;
     display: flex;
     justify-content: space-evenly;
@@ -41,10 +43,6 @@ body {
 .buttonWrapper  {
     width: 10em;
     height: 10em;
-}
-
-.buttonGalery {
-    width: 4em;
 }
 
 img {
@@ -78,4 +76,10 @@ img {
 
 .on {
     display: block;
+}
+
+.footer button {
+    width: 4em;
+    border: none;
+    background-color: transparent;
 }
