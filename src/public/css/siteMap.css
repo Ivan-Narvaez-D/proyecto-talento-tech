@@ -1,10 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainContainer {
     padding: .5em;
+}
+
+h1, p {
+    color: #224f77;
 }
 
 .video-background {
@@ -39,6 +44,11 @@ button {
 
 .dropdown {
     display: flex;
+    align-items: center;
+}
+
+.dropdown p {
+    font-size: 3.5em;
 }
 
 .siteMapContainer {
@@ -46,13 +56,11 @@ button {
     justify-self: center;
     display: grid;
     grid-gap: 1em;
+    background: linear-gradient(45deg, #b5bde6, #c5dde0);
+    border-radius: .5em;
 }
 
 .homeDropdown {
-    padding-inline-start: 1em;
-}
-
-.homeDropdown > .on {
     padding-inline-start: 1em;
 }
 
@@ -61,14 +69,5 @@ img {
 }
 
 .dropdown img {
-    width: 1em;
-}
-
-.off {
-    display: none;
-}
-
-.on {
-    display: grid;
-    grid-gap: 1.5em;
+    width: 5em;
 }

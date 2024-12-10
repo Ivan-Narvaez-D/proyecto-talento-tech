@@ -6,20 +6,21 @@
     <title>Proyecto Tech</title>
 </head>
 <body>
+    
     <div class="mainContainer">
         <div class="header">
             <button class="buttonHome" id="buttonHome">
                 <img src="/img/homeIcon.png" alt="galeryIcon">
             </button>
             <div class="title">
-                <p><%= birdData.Especie %></p>
+                <h1><%= birdData.Especie %></h1>
             </div>
         </div>
         <div class="imgContainer">
             <img src="" alt="">
         </div>
         <div class="commonNamesContainer">
-            <p>Nombres comunes (es)</p>
+            <h3>Nombres comunes (es)</h3>
             <ul>
                 <% birdData.nombreAlter.split(',').forEach(altName => { %>
                     <li><%= altName.trim() %></li>
@@ -27,7 +28,7 @@
             </ul>
         </div>
         <div class="taxonomiContainer">
-            <p>Taxonomía</p>
+            <h3>Taxonomía</h3>
             <ul>
                 <li>Reino: <%= birdData.Reino %></li>
                 <li>Filo: <%= birdData.Filo %></li>
@@ -38,7 +39,7 @@
             </ul>
         </div>
         <div class="descriptionContainer">
-            <p>Resumen</p>
+            <h3>Resumen</h3>
             <p><%= birdData.Descripción %></p>
         </div>
     </div>

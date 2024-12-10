@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenedor {
@@ -12,35 +13,37 @@
     padding: 0.5em;
 }
 
+h1 {
+    color: #224f77;
+}
+
 .header {
     display: grid;
     grid-gap: 2em;
     padding: 1em;
-    background: linear-gradient(45deg, #686666, #abebf3); /* Fondo degradado */
-    color: rgb(40, 39, 39); /* Texto en blanco */
-    font-family: Arial, Helvetica, sans-serif; /* Fuente moderna */
-    border-radius: 2in; /* Bordes redondeados */
-    box-shadow: 10px 10px 0 0; /* Sombra para dar profundidad */
-    text-align: center; /* Centra el contenido del texto */
+    background: linear-gradient(45deg, #686666, #abebf3);
+    color: rgb(40, 39, 39);
+    border-radius: 2in;
+    box-shadow: 10px 10px 0 0;
+    text-align: center;
 }
 
 .header p {
-    font-size: 1.5em; /* Tamaño de fuente para subtítulos o descripciones */
-    margin: 0.5em 0 0 0; /* Espaciado superior para separar del título */
+    font-size: 1.5em;
+    margin: 0.5em 0 0 0;
 }
 
 .footer{
     display: flex;
     justify-content: space-between;
-    margin: 1em;
+    padding: 1.5em;
     grid-row-start: 4;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .contenido {
@@ -94,7 +97,7 @@ img {
 }
 
 .footer button {
-    width: 4em;
+    width: 6em;
     border: none;
     background-color: transparent;
 }
