@@ -55,8 +55,8 @@ body {
 }
 
 .buttonWrapper  {
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 9em;
 }
 
 img {
@@ -87,7 +87,7 @@ img {
 .buttonGraphicContainer {
     display: flex;
     justify-content: center;
-    padding: 9em;
+    padding: 7em;
 }
 
 .buttonGraphics {
