@@ -19,7 +19,7 @@
         </div>
         <div class="galeryContainer">
             <% data.forEach(birdData => { %>
-                <%- include('partials/buttonGalery', { birdData, birdName: birdData.Especie.replace(" ", "-") }); %>
+                <%- include('partials/buttonGalery', { birdData, birdName: birdData.especie.replace(" ", "-") }); %>
             <% }); %>
         </div>
     </div>

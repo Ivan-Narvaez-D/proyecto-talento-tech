@@ -22,6 +22,8 @@ h1 {
     display: grid;
     grid-template-columns: max-content auto;
     align-items: center;
+    margin-inline-start: .5em;
+    margin-block-start: .5em;
 }
 
 .title {
@@ -29,16 +31,32 @@ h1 {
 }
 
 .galeryContainer {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: .5em;
-    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    justify-content: space-evenly;
 }
 
 .showBirdButton {
-    height: 10em;
-    background-color: blueviolet;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: calc(33% - 16px);
+    min-width: 200px;
+    height: auto;
 }
+
+.showBirdButton p {
+    background-color: white;
+}
+
+.showBirdButton img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 
 .buttonHome {
     width: 4em;

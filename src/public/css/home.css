@@ -100,4 +100,5 @@ img {
     width: 6em;
     border: none;
     background-color: transparent;
+    margin-inline-end: .5em;
 }

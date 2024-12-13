@@ -13,16 +13,16 @@
                 <img src="/img/homeIcon.png" alt="galeryIcon">
             </button>
             <div class="title">
-                <h1><%= birdData.Especie %></h1>
+                <h1><%= birdData.especie %></h1>
             </div>
         </div>
         <div class="imgContainer">
-            <img src="" alt="">
+            <img src="/img/birds/<%= name %>/img1.jpg" alt="">
         </div>
         <div class="commonNamesContainer">
             <h3>Nombres comunes (es)</h3>
             <ul>
-                <% birdData.nombreAlter.split(',').forEach(altName => { %>
+                <% birdData.nombreAlter.forEach(altName => { %>
                     <li><%= altName.trim() %></li>
                 <% }); %>
             </ul>
@@ -30,17 +30,36 @@
         <div class="taxonomiContainer">
             <h3>Taxonomía</h3>
             <ul>
-                <li>Reino: <%= birdData.Reino %></li>
-                <li>Filo: <%= birdData.Filo %></li>
-                <li>Clase: <%= birdData.Clase %></li>
-                <li>Orden: <%= birdData.Orden %></li>
-                <li>Familia: <%= birdData.Familia %></li>
-                <li>Género: <%= birdData.Género %></li>
+                <li>Reino: <%= birdData.reino %></li>
+                <li>Filo: <%= birdData.filo %></li>
+                <li>Clase: <%= birdData.clase %></li>
+                <li>Orden: <%= birdData.orden %></li>
+                <li>Familia: <%= birdData.familia %></li>
+                <li>Género: <%= birdData.genero %></li>
             </ul>
         </div>
         <div class="descriptionContainer">
             <h3>Resumen</h3>
-            <p><%= birdData.Descripción %></p>
+            <p><%= birdData.descripcion %></p>
+        </div>
+        <div class="imgGalery">
+            <% birdData.enlace.forEach(enlace => { %>
+                <% const src = enlace.replace('nombre-ave', name) %>
+                <button class="openGaleryButton" onclick="openModal('<%= src %>')">
+                    <img src="<%= src %>" alt="">
+                </button>
+            <% }) %>
+        </div>
+    </div>
+    <div id="dialog" class="modal">
+        <div class="modal-content">
+            <span id="closeDialog" class="close-btn">&times;</span>
+            <div class="modal-body">
+                <% const enlaces = JSON.stringify(birdData.enlace).replaceAll(`nombre-ave`, name) %>
+                <button id="prevBtn" class="nav-btn" onclick="prevImg('<%= enlaces %>')">&#10094;</button>
+                <img id="modalImage" src="" alt="Imagen 1" class="modal-image">
+                <button id="nextBtn" class="nav-btn" onclick="nextImg('<%= enlaces %>')">&#10095;</button>
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="/css/birdView.css">
