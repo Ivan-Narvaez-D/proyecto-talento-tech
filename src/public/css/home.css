@@ -94,6 +94,7 @@ img {
     width: 100%;
     border: 4mm ridge rgb(175 224 227 / 60%);
     font-size: 2em;
+    border-radius: .5em;
 }
 
 .footer button {
